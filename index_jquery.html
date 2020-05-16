@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>element demo</title>
+  <style>
+  div, span, p {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #eee;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+
+  <h2>Jquery</h2>
+  <div>DIQV1</div>
+  <div>DIV2</div>
+  <span>SPAN</span>
+
+  <h2>Js<h2>
+  <p id="q">p1</p>
+  <p>p2</p>
+  <span>SPAN</span>
+
+  <script>
+  $( "div" ).css( "border", "9px solid red" );
+  // document.getElementById('q').style.cssText = "border: 9px solid red";
+  let tags = document.getElementsByTagName('p');
+
+  for (let list of tags) {
+    list.style.cssText = "border: 9px solid red";
+  }
+  </script>
+
+</body>
+</html>
+
+<!-- elt.style.cssText = "color: blue; border: 1px solid black";  -->
+
+<!-- .style.cssText = "color: blue; border: 1px solid black"; -->
